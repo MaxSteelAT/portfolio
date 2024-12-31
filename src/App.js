@@ -150,13 +150,13 @@ function App() {
       </div>
       <div>
         <div style={style.aboutmeContainer}>
-          <h1 style={style.h1aboutme}>About me</h1>
+          <h1 style={style.h1aboutme}>Sobre mí</h1>
           <p style={style.aboutme}>
             Siempre he tenido una gran curiosidad por la tecnología, pero fue después de algunas experiencias laborales cuando entendí que mi verdadera pasión era la programación. Comencé con cursos en línea, aprendiendo los fundamentos de lenguajes como JavaScript, React etc. A pesar de los retos iniciales, mi dedicación me llevó a desarrollar proyectos pequeños, desde una aplicación de gestión de tareas hasta una página web interactiva. Hoy en día, aspiro a convertirme en una programadora profesional, buscando constantemente mejorar mis habilidades y mantenerme al día con las últimas tecnologías. Mi objetivo es trabajar en una empresa de software innovadora, donde pueda contribuir con soluciones creativas y seguir aprendiendo de expertos en el campo.
           </p>
         </div>
         <div style={style.experienceContainer}>
-          <h1 style={style.h1experience}>Experience</h1>
+          <h1 style={style.h1experience}>Experiencia</h1>
           <div style={style.proyectsContainer}>
             <div style={style.componentContainer}>
               <div style={style.cardContainer}>

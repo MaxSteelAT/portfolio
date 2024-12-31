@@ -167,7 +167,7 @@ function App() {
                 </div>
               </div>
               <div style={style.urlContainer}>
-                <a style={style.link} target="_blank" rel="noopener" href="https://codepen.io/Ingrid-Lopez">Ver perfil</a>
+                <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://codepen.io/Ingrid-Lopez">Ver perfil</a>
               </div>
             </div>
             <div style={style.componentContainer}>
@@ -179,7 +179,7 @@ function App() {
                 </div>
               </div>
               <div style={style.urlContainer}>
-                <a style={style.link} target="_blank" rel="noopener" href="https://www.frontendmentor.io/profile/MaxSteelAT">Ver perfil</a>
+                <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://www.frontendmentor.io/profile/MaxSteelAT">Ver perfil</a>
               </div>
             </div>
             <div style={style.componentContainer}>
@@ -191,7 +191,7 @@ function App() {
                 </div>
               </div>
               <div style={style.urlContainer}>
-                <a style={style.link} target="_blank" rel="noopener" href="https://github.com/MaxSteelAT">Ver perfil</a>
+                <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://github.com/MaxSteelAT">Ver perfil</a>
               </div>
             </div>
           </div>

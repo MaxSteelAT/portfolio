@@ -6,7 +6,9 @@ import frontend from './img/frontend.png';
 import email from './img/email.png'
 
 const colors = {
-  gray: "RGB(151, 154, 154)"
+  gray: "RGB(151, 154, 154)",
+  purple: "RGB(123, 24, 173)",
+  pink: "rgb(246 213 230)"
 }
 
 const style = {
@@ -62,7 +64,7 @@ const style = {
   h1aboutme: {
     minWidth: "250px",
   },
-  paboutme: {
+  aboutme: {
     marginRight: "200px",
     marginTop: "30px",
     maxWidth: "1300px",
@@ -80,16 +82,18 @@ const style = {
   proyectsContainer: {
     display: "flex",
     maxWidth: "1300px",
+    flexWrap: "wrap"
   },
   cardContainer: {
     display: "flex",
     marginBottom: "20px",
+    height: "100px"
   },
   componentContainer: {
     width: "300px",
     marginRight: "10px",
     marginTop: "20px",
-    border: "1px solid RGB(123, 24, 173)",
+    border: `1px solid ${colors.purple}`,
     borderRadius: "30px",
   },
   icon: {
@@ -97,13 +101,14 @@ const style = {
     marginLeft: "15px",
     borderRadius: "100px",
     width: "50px",
+    height: "50px"
   },
   h3card: {
     marginLeft: "15px",
     marginBottom: "1px",
   },
-  span: {
-    marginLeft: "15px",
+  text: {
+    margin: "10px",
     fontSize: "12px",
     color: "gray",
   },
@@ -121,7 +126,7 @@ const style = {
   footer: {
     marginTop: "100px",
     height: "70px",
-    backgroundColor: "rgb(246 213 230)",
+    backgroundColor: colors.pink,
   }
 }
 
@@ -146,7 +151,7 @@ function App() {
       <div>
         <div style={style.aboutmeContainer}>
           <h1 style={style.h1aboutme}>About me</h1>
-          <p style={style.paboutme}>
+          <p style={style.aboutme}>
             Siempre he tenido una gran curiosidad por la tecnología, pero fue después de algunas experiencias laborales cuando entendí que mi verdadera pasión era la programación. Comencé con cursos en línea, aprendiendo los fundamentos de lenguajes como JavaScript, React etc. A pesar de los retos iniciales, mi dedicación me llevó a desarrollar proyectos pequeños, desde una aplicación de gestión de tareas hasta una página web interactiva. Hoy en día, aspiro a convertirme en una programadora profesional, buscando constantemente mejorar mis habilidades y mantenerme al día con las últimas tecnologías. Mi objetivo es trabajar en una empresa de software innovadora, donde pueda contribuir con soluciones creativas y seguir aprendiendo de expertos en el campo.
           </p>
         </div>
@@ -158,11 +163,11 @@ function App() {
                 <img style={style.icon} src={codepen} alt="icono"></img>
                 <div>
                   <h3 style={style.h3card}>Codepen.io</h3>
-                  <span style={style.span}>ambiente de desarollo</span>
+                  <p style={style.text}>CodePen es un entorno de desarrollo para diseñadores y desarrolladores front-end.</p>
                 </div>
               </div>
               <div style={style.urlContainer}>
-                <a style={style.link} href="https://codepen.io/Ingrid-Lopez">view project</a>
+                <a style={style.link} target="_blank" href="https://codepen.io/Ingrid-Lopez">Ver perfil</a>
               </div>
             </div>
             <div style={style.componentContainer}>
@@ -170,11 +175,11 @@ function App() {
                 <img style={style.icon} src={frontend} alt="icono"></img>
                 <div>
                   <h3 style={style.h3card}>Frontend Mentor</h3>
-                  <span style={style.span}>ambiente de desarollo</span>
+                  <p style={style.text}>Frontend Mentor ofrece invaluables desafíos de desarrollo web del mundo real, agudizando mis habilidades en HTML, CSS y JavaScript.</p>
                 </div>
               </div>
               <div style={style.urlContainer}>
-                <a style={style.link} href="https://www.frontendmentor.io/profile/MaxSteelAT">view project</a>
+                <a style={style.link} target="_blank" href="https://www.frontendmentor.io/profile/MaxSteelAT">Ver perfil</a>
               </div>
             </div>
             <div style={style.componentContainer}>
@@ -182,11 +187,11 @@ function App() {
                 <img style={style.icon} src={github} alt="icono"></img>
                 <div>
                   <h3 style={style.h3card}>Github</h3>
-                  <span style={style.span}>ambiente de desarollo</span>
+                  <p style={style.text}>GitHub es una plataforma donde puedes almacenar, compartir y trabajar junto con otros usuarios para escribir código. </p>
                 </div>
               </div>
               <div style={style.urlContainer}>
-                <a style={style.link} href="https://github.com/MaxSteelAT">view project</a>
+                <a style={style.link} target="_blank" href="https://github.com/MaxSteelAT">Ver perfil</a>
               </div>
             </div>
           </div>

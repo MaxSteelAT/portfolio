@@ -83,7 +83,7 @@ const style = {
   },
   cardContainer: {
     display: "flex",
-    minHeight: "80px"
+    height: "140px"
   },
   componentContainer: {
     width: "300px",
@@ -220,10 +220,8 @@ function App() {
                   <h3 style={style.h3card}>TOGO México - Sitio web - Wordpress</h3>
                   <p style={style.text}>
                   Desarrollo web con Wordpress:
-                  Análisis de componentes.
-                  Actualización de diseño.
-                  Creación de componentes.
-                  Integración y actualización de plugins.
+                  Actualización y creación de componentes.
+                  Administración de plugins.
                   </p>
                 </div>
               </div>

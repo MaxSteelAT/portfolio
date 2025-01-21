@@ -3,7 +3,9 @@ import avatar from './img/profile.jpg';
 import codepen from './img/codepen.png';
 import github from './img/github.png';
 import frontend from './img/frontend.png';
-import email from './img/email.png'
+import togo from './img/togo-logo.png'
+import pet from './img/pet.png'
+import calculator from './img/calculator.png'
 
 const colors = {
   gray: "RGB(151, 154, 154)",
@@ -14,7 +16,6 @@ const colors = {
 const style = {
   header: {
     width: "100%",
-    overflow: "hidden",
   },
   profileContainer: {
     display: "flex",
@@ -41,19 +42,15 @@ const style = {
   h3contact: {
     fontSize: "16px",
     marginTop: "5px",
-    marginBottom: "5px",
-    color: colors.gray,
+    color: colors.purple,
+    marginBottom: '15px'
   },
-  h3email: {
+  h3title: {
     display: "flex",
     alignItems: "center",
     fontSize: "12px",
     color: "gray",
     marginTop: "5px",
-  },
-  email: {
-    width: "30px",
-    marginRight: "10px",
   },
   aboutmeContainer: {
     marginTop: "100px",
@@ -86,8 +83,7 @@ const style = {
   },
   cardContainer: {
     display: "flex",
-    marginBottom: "20px",
-    height: "100px"
+    minHeight: "80px"
   },
   componentContainer: {
     width: "300px",
@@ -100,6 +96,12 @@ const style = {
     marginTop: "20px",
     marginLeft: "15px",
     borderRadius: "100px",
+    width: "50px",
+    height: "50px"
+  },
+  image: {
+    marginTop: "20px",
+    marginLeft: "15px",
     width: "50px",
     height: "50px"
   },
@@ -116,7 +118,7 @@ const style = {
     borderTop: `1px solid ${colors.gray}`,
     textAlign: "center",
     padding: "15px",
-    marginTop: "30px",
+    marginTop: "10px",
   },
   link: {
     fontSize: "20px",
@@ -143,16 +145,28 @@ function App() {
         <div style={style.contactContainer}>
           <h1 style={style.h1contact}>Ingrid López</h1>
           <h3 style={style.h3contact}>Frontend & Web developer</h3>
-          <h3 style={style.h3email}>
-            <img alt="Correo electrónico" style={style.email} src={email}></img>mtra.ingrid.lopez@gmail.com
-          </h3>
+          <a target="_blank" rel="noopener noreferrer" href='mailto:mtra.ingrid.lopez@gmail.com'>
+            <h3 style={style.h3title}>
+              <i class="fa-icon fa-solid fa-envelope"></i>mtra.ingrid.lopez@gmail.com
+            </h3>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/ingrid-lopez-61a874321/'>
+            <h3 style={style.h3title}>
+              <i class="fa-icon fa-brands fa-linkedin"></i>https://www.linkedin.com/
+            </h3>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href='https://github.com/maxsteelat'>
+            <h3 style={style.h3title}>
+              <i class="fa-icon fa-brands fa-square-github"></i>https://github.com/maxsteelat
+            </h3>
+          </a>
         </div>
       </div>
       <div>
         <div style={style.aboutmeContainer}>
           <h1 style={style.h1aboutme}>Sobre mí</h1>
           <p style={style.aboutme}>
-            Siempre he tenido una gran curiosidad por la tecnología, pero fue después de algunas experiencias laborales cuando entendí que mi verdadera pasión era la programación. Comencé con cursos en línea, aprendiendo los fundamentos de lenguajes como JavaScript, React etc. A pesar de los retos iniciales, mi dedicación me llevó a desarrollar proyectos pequeños, desde una aplicación de gestión de tareas hasta una página web interactiva. Hoy en día, aspiro a convertirme en una programadora profesional, buscando constantemente mejorar mis habilidades y mantenerme al día con las últimas tecnologías. Mi objetivo es trabajar en una empresa de software innovadora, donde pueda contribuir con soluciones creativas y seguir aprendiendo de expertos en el campo.
+            Siempre he tenido una gran curiosidad por la tecnología. Comencé con cursos en línea, aprendiendo los fundamentos y tecnologías como <strong>CSS</strong>, <strong>HTML</strong>, <strong>JS</strong>, <strong>React.js</strong>, etc. A pesar de los retos iniciales, mi dedicación me llevó a desarrollar proyectos pequeños, desde una página web hasta una aplicación web interactiva. Hoy en día, aspiro a convertirme en una programadora profesional, buscando constantemente mejorar mis habilidades y mantenerme al día con las últimas tecnologías.
           </p>
         </div>
         <div style={style.experienceContainer}>
@@ -175,7 +189,7 @@ function App() {
                 <img style={style.icon} src={frontend} alt="icono"></img>
                 <div>
                   <h3 style={style.h3card}>Frontend Mentor</h3>
-                  <p style={style.text}>Frontend Mentor ofrece invaluables desafíos de desarrollo web del mundo real, agudizando mis habilidades en HTML, CSS y JavaScript.</p>
+                  <p style={style.text}>Frontend Mentor ofrece invaluables desafíos de desarrollo web del mundo real, agudizando mis habilidades en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JS</strong>.</p>
                 </div>
               </div>
               <div style={style.urlContainer}>
@@ -192,6 +206,53 @@ function App() {
               </div>
               <div style={style.urlContainer}>
                 <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://github.com/MaxSteelAT">Ver perfil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={style.experienceContainer}>
+          <h1 style={style.h1experience}>Proyectos</h1>
+          <div style={style.proyectsContainer}>
+            <div style={style.componentContainer}>
+              <div style={style.cardContainer}>
+                <img style={style.image} src={togo} alt="icono"></img>
+                <div>
+                  <h3 style={style.h3card}>TOGO México - Sitio web - Wordpress</h3>
+                  <p style={style.text}>
+                  Desarrollo web con Wordpress:
+                  Análisis de componentes.
+                  Actualización de diseño.
+                  Creación de componentes.
+                  Integración y actualización de plugins.
+                  </p>
+                </div>
+              </div>
+              <div style={style.urlContainer}>
+                <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://togomexico.com.mx/">Ir a sitio</a>
+              </div>
+            </div>
+            <div style={style.componentContainer}>
+              <div style={style.cardContainer}>
+                <img style={style.image} src={pet} alt="icono"></img>
+                <div>
+                  <h3 style={style.h3card}>Adoption center - personal</h3>
+                  <p style={style.text}>Sitio web para visualizar listado y almacenamiento temporal utilizando información de API.</p>
+                </div>
+              </div>
+              <div style={style.urlContainer}>
+                <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://maxsteelat.github.io/Adoption-Center/index.html">Ir a sitio</a>
+              </div>
+            </div>
+            <div style={style.componentContainer}>
+              <div style={style.cardContainer}>
+                <img style={style.image} src={calculator} alt="icono"></img>
+                <div>
+                  <h3 style={style.h3card}>Calculator app with React - personal</h3>
+                  <p style={style.text}>Simple calculadora creado con React.js. Se agregaron las operaciones básicas.</p>
+                </div>
+              </div>
+              <div style={style.urlContainer}>
+                <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://maxsteelat.github.io/React-Calculator/">Ir a sitio</a>
               </div>
             </div>
           </div>
